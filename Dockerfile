@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
   --no-install-recommends && \
   rm -rf /var/lib/apt/lists/*
 
-ENV DATOMIC_VERSION 0.9.5173
+ENV DATOMIC_VERSION 0.9.5186
 
 RUN (curl -L https://my.datomic.com/downloads/free/${DATOMIC_VERSION} -o /tmp/datomic-free.zip &&\
      unzip /tmp/datomic-free.zip -d /usr/share &&\
